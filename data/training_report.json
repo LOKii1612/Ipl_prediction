@@ -1,0 +1,66 @@
+{
+  "match_winner": {
+    "model": "match_winner",
+    "test_accuracy": 0.5792,
+    "cv_accuracy": 0.5683,
+    "features": [
+      "t1_hist_win_rate",
+      "t2_hist_win_rate",
+      "h2h_t1_rate",
+      "toss_winner_is_t1",
+      "toss_decision_bat",
+      "venue_bf_rate",
+      "strength_diff",
+      "season_norm"
+    ]
+  },
+  "toss_impact": {
+    "model": "toss_impact",
+    "test_accuracy": 0.5083,
+    "cv_accuracy": 0.4858,
+    "features": [
+      "toss_decision_bat",
+      "venue_bf_rate",
+      "season_norm",
+      "t1_hist_win_rate",
+      "t2_hist_win_rate"
+    ]
+  },
+  "batting_first": {
+    "model": "batting_first",
+    "test_accuracy": 0.6417,
+    "cv_accuracy": 0.5908,
+    "features": [
+      "venue_bf_rate",
+      "first_innings_score",
+      "batting_first_is_t1",
+      "t1_hist_win_rate",
+      "t2_hist_win_rate",
+      "season_norm"
+    ]
+  },
+  "player_performance": {
+    "model": "player_performance",
+    "mae": 7.2187,
+    "r2": 0.1185,
+    "features": [
+      "strength_rating",
+      "venue_bf_rate",
+      "role_enc",
+      "batting_avg",
+      "strike_rate",
+      "bowling_economy"
+    ]
+  },
+  "venue_advantage": {
+    "model": "venue_advantage",
+    "mae": 0.0721,
+    "r2": 0.7159,
+    "features": [
+      "strength",
+      "global_win_rate",
+      "venue_bf_rate",
+      "avg_score"
+    ]
+  }
+}
